@@ -1,0 +1,22 @@
+footer{
+    display: flex;
+    margin: 1em;
+    justify-content: end;
+}
+footer button{
+    color: white;
+    background-color: transparent;
+    border: white 3px solid;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    padding: 1em;
+    padding-left:2.5em ;
+    padding-right: 2.5em;
+    transition: 0.5s;
+}
+footer button:hover{
+    background-color:white ;
+    border-color:rgba(0, 0, 0, 0.562) ;
+    color:#1A2749 ;
+}

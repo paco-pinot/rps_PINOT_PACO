@@ -1,0 +1,83 @@
+.duel{
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+    justify-content: space-between;
+    margin-top: 5em;
+    align-items: center;
+}
+.Joueur,.adversaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+.youPicked{
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+}
+.midDuel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 400;
+}
+.hDuel{
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}
+.hDuel p{
+    margin: 0 ;
+    padding: 0;
+}
+.playAgain button{
+    background-color: white;
+    color: blue;
+    padding: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.5s;
+}
+.playAgain button:hover{
+    transform: scale(1.05);
+}
+.pasChoisi{
+    background-color: #0b162c;
+    font-size: 2em;
+    color: white;
+    padding: 1.8em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.padWin{
+    border-radius: 50%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.493);
+}
+.padWinner{
+    padding: 3em;
+    background-color: rgba(255, 255, 255, 0.381);
+    border-radius: 50%;
+    z-index: 1;
+    
+}
+.p1{
+ 
+    
+}
+.p2{
+
+}
+.p3{
+
+}

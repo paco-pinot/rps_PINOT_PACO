@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./app.css"
+import Main from "./components/main/Main"
+import Score from "./components/score/Score"
+import Duel from "./components/duel/Duel"
+import Modal from "./components/modal/Modal"
+import Footer from "./components/footer/Footer"
+import {useState,useEffect} from "react"
+import Scissors from "./images/icon-scissors.svg"
+import Paper from "./images/icon-paper.svg"
+import Rock from "./images/icon-rock.svg"
+import Ppc from "./components/PierrePapierCiseaux/Ppc"
+// import Duel from "./components/duel/Duel"
 function App() {
+  const [ModalState, setModalState] = useState(false);
+  const [textWin,settextWin] = useState("");
+  let [Scoree, setScoree] = useState(12);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="containerApp">
+        <Score textWin={textWin} settextWin={settextWin} Scoree={Scoree} setScoree={setScoree}/>
+        <Main textWin={textWin} settextWin={settextWin} Scoree={Scoree} setScoree={setScoree}/>
+        {/* <Duel/> */}
+        <Footer ModalState={ModalState} setModalState={setModalState} />
+        {/* <Modal/> */}
+      </div>
     </div>
   );
 }

@@ -1,0 +1,21 @@
+.ppc{
+    background-color: white;
+    padding: 2em;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: inset 4px 4px 4px 4px black;
+    transform: scale(1);
+    transition: 0.5s;
+}
+.paper{
+    border: solid blue 2em;
+}
+.scisor{
+    border: solid orange 2em;
+}
+.rock{
+    border: solid red 2em;
+}
+.ppc:hover{
+    transform: scale(1.1);
+}

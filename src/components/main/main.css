@@ -1,0 +1,27 @@
+
+.containerMain{
+    background-image: url("../../images/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 350px;
+    margin-top: 10em;
+    position: relative;
+}
+.paperScisor{
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+    position: absolute;
+    bottom: 16em;
+    left: 23em;
+}
+.rockContainer{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 33.6em;
+    top: 13em;
+}
+
+
