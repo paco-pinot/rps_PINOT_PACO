@@ -8,7 +8,7 @@
     border: white solid 2px;
     border-radius: 10px;
     padding: 2em;
-    width: 40em;
+    width: 60vw;
     justify-content: space-between;
 }
 .title{
@@ -39,4 +39,22 @@
     color: #575467;
     font-size: 3em;
     font-weight: bolder;
+}
+@media (max-width: 700px){
+    .scoreLive{
+        padding-left: 2em;
+        padding-right: 2em;
+        font-size: medium;
+    }
+    .title{
+        font-size: larger;
+    }
+    .nomScore{
+        font-size: medium;
+
+    }
+    .chiffreScore{
+        font-size: xx-large;
+
+    }
 }

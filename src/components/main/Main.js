@@ -37,19 +37,21 @@ let playAgain =()=>{
     return (
         <main>
         {ChoixJoueur===false?
-            <div className="containerMain">
-                <div className="paperScisor">
-                    <div onClick={()=>{setPick(<Ppc type={"paper"} img={Paper} choix ={ChoixJoueur} setChoix ={setChoixJoueur} />) ; fctHasard() ;  setPickDuJoueur("paper")}}>
-                    <Ppc type={"paper"} img={Paper} choix ={ChoixJoueur} setChoix ={setChoixJoueur}  />
-                    </div>
-                    <div onClick={()=>{setPick( <Ppc type={"scisor"} img={Scissors} choix ={ChoixJoueur} setChoix ={setChoixJoueur} />) ; fctHasard() ;  setPickDuJoueur("scisor")}}>
-                    <Ppc type={"scisor"} img={Scissors} choix ={ChoixJoueur} setChoix ={setChoixJoueur} />
-                    </div>
+            <div className="alignBg">
+                <div className="containerMain">
+                    <div className="paperScisor">
+                        <div className="papier" onClick={()=>{setPick(<Ppc type={"paper"} img={Paper} choix ={ChoixJoueur} setChoix ={setChoixJoueur} />) ; fctHasard() ;  setPickDuJoueur("paper")}}>
+                            <Ppc type={"paper"} img={Paper} choix ={ChoixJoueur} setChoix ={setChoixJoueur}  />
+                        </div>
+                        <div className="ciseaux" onClick={()=>{setPick( <Ppc type={"scisor"} img={Scissors} choix ={ChoixJoueur} setChoix ={setChoixJoueur} />) ; fctHasard() ;  setPickDuJoueur("scisor")}}>
+                            <Ppc type={"scisor"} img={Scissors} choix ={ChoixJoueur} setChoix ={setChoixJoueur} />
+                        </div>
 
-                </div>
-                <div className="rockContainer">
-                    <div onClick={()=>{setPick( <Ppc type={"rock"} img={Rock} choix ={ChoixJoueur} setChoix ={setChoixJoueur} />) ; fctHasard() ;  setPickDuJoueur("rock")}}>
-                    <Ppc type={"rock"} img={Rock} choix ={ChoixJoueur} setChoix ={setChoixJoueur} />
+                    </div>
+                    <div className="rockContainer">
+                        <div onClick={()=>{setPick( <Ppc type={"rock"} img={Rock} choix ={ChoixJoueur} setChoix ={setChoixJoueur} />) ; fctHasard() ;  setPickDuJoueur("rock")}}>
+                            <Ppc type={"rock"} img={Rock} choix ={ChoixJoueur} setChoix ={setChoixJoueur} />
+                        </div>
                     </div>
                 </div>
             </div>

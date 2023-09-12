@@ -9,7 +9,7 @@ function Modal(props) {
             <h2>RULES</h2>
           </div>
           <div onClick={()=>{props.setModalState(false)}} className="crossContainer"> 
-            <img src={Cross} alt="" />
+            <img className="croixModal" src={Cross} alt="" />
           </div>
         </div>
         <div className="imgModal">

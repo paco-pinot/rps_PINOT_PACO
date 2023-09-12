@@ -59,19 +59,19 @@ useEffect(()=>{
       fctGagnant()
   }
 },[compteur,props.ChoixAdversaire])
-// useEffect(()=>{
-//     fctGagnant()
-// },[props.ChoixAdversaire])
     return (
-      <div className="duel">
-        <div className="Joueur">
-          <div className="youPicked">
-            YOU PICKED
+      <div className="alignDuel">
+        <div className="duel">
+          <div className="Joueur">
+            <div className="youPicked">
+              YOU PICKED
+            </div>
+            <div className="youPickedImg">
+              {props.Pick}
+            </div>
           </div>
-          <div className="youPickedImg">
-            {props.Pick}
-          </div>
-        </div>
+        
+
         {compteur===0 ? 
           <div className="midDuel">
           <div className="hDuel">
@@ -92,6 +92,7 @@ useEffect(()=>{
               {compteurState===false ? compteur : props.ChoixAdversaire}
               </div>
             </div>
+        </div>
         </div>
       </div>
     );

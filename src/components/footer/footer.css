@@ -2,6 +2,7 @@ footer{
     display: flex;
     margin: 1em;
     justify-content: end;
+    padding-bottom: 3em;
 }
 footer button{
     color: white;
